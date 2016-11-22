@@ -72,6 +72,88 @@
       <td class="danger">...</td>
       <td class="info">...</td>
     </tr>
+
+    <!-- nicely formatted form -->
+    <div class="input-group">
+      <span class="input-group-addon" id="basic-addon1">@</span>
+      <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+    </div>
+
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
+      <span class="input-group-addon" id="basic-addon2">@example.com</span>
+    </div>
+
+    <div class="input-group">
+      <span class="input-group-addon">$</span>
+      <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+      <span class="input-group-addon">.00</span>
+    </div>
+
+    <label for="basic-url">Your vanity URL</label>
+    <div class="input-group">
+      <span class="input-group-addon" id="basic-addon3">https://example.com/users/</span>
+      <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+    </div>
+    
+    <br><br>
+    <!-- buttons with icons and dropdown menu -->
+    <div class="btn-group" role="group" aria-label="...">
+      <button type="button" class="glyphicon glyphicon-heart-empty"></button>
+      <button type="button" class="glyphicon glyphicon-thumbs-up"></button>
+      <button type="button" class="glyphicon glyphicon-trash"></button>
+      
+      <div class="btn-group" role="group">
+	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	  Dropdown
+	  <span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu">
+	  <li><a href="#">Dropdown link</a></li>
+	  <li><a href="#">Dropdown link</a></li>
+	  <li role="separator" class="divider"></li>
+	  <li class="disabled"><a href="#">Disabled link</a></li>
+	</ul>
+      </div>
+    </div>
+    
+    <br><br>
+    <!-- popup alert message -->
+    <div class="alert alert-warning alert-dismissible" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <strong>Warning!</strong> Dismissible alert!
+    </div>
+
+    <br><br>
+    <!-- progress bar with percentage -->
+    <div class="progress">
+      <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+	60%
+      </div>
+    </div>
+
+    
+    <!-- page navigation with 5 pages -->
+    <br><br>
+    <nav aria-label="Page navigation">
+      <ul class="pagination">
+	<li>
+	  <a href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+	  </a>
+	</li>
+	<li><a href="#">1</a></li>
+	<li><a href="#">2</a></li>
+	<li><a href="#">3</a></li>
+	<li><a href="#">4</a></li>
+	<li><a href="#">5</a></li>
+	<li>
+	  <a href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+	  </a>
+	</li>
+      </ul>
+    </nav>
     
   </body>
 </html>
