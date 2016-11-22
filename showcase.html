@@ -35,8 +35,31 @@
       <strong>Warning!</strong> Better check yourself, you're not looking too good.
     </div>
 
+
+    <br><br>
+    <!-- buttons with icons and dropdown menu -->
+    <div class="btn-group" role="group" aria-label="...">
+      <button type="button" class="glyphicon glyphicon-heart-empty"></button>
+      <button type="button" class="glyphicon glyphicon-thumbs-up"></button>
+      <button type="button" class="glyphicon glyphicon-trash"></button>
+      <!--
+      <div class="btn-group" role="group">
+	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	  Dropdown
+	  <span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu">
+	  <li><a href="#">Dropdown link</a></li>
+	  <li><a href="#">Dropdown link</a></li>
+	  <li role="separator" class="divider"></li>
+	  <li class="disabled"><a href="#">Disabled link</a></li>
+	</ul>
+      </div>
+      -->
+    </div>
     
-    <h1>Sample Registration Page with Bootstrap</h1>
+    
+    <h1>Cool Bootstrap Features</h1>
     
 
     <!-- Rows?? -->
@@ -122,60 +145,7 @@
       <span class="input-group-addon" id="basic-addon3">https://example.com/users/</span>
       <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
     </div>
-    
-    <br><br>
-    <!-- buttons with icons and dropdown menu -->
-    <div class="btn-group" role="group" aria-label="...">
-      <button type="button" class="glyphicon glyphicon-heart-empty"></button>
-      <button type="button" class="glyphicon glyphicon-thumbs-up"></button>
-      <button type="button" class="glyphicon glyphicon-trash"></button>
       
-      <div class="btn-group" role="group">
-	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	  Dropdown
-	  <span class="caret"></span>
-	</button>
-	<ul class="dropdown-menu">
-	  <li><a href="#">Dropdown link</a></li>
-	  <li><a href="#">Dropdown link</a></li>
-	  <li role="separator" class="divider"></li>
-	  <li class="disabled"><a href="#">Disabled link</a></li>
-	</ul>
-      </div>
-    </div>
-    
-    <br><br>
-
-    <br><br>
-    <!-- progress bar with percentage -->
-    <div class="progress">
-      <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-	60%
-      </div>
-    </div>
-
-    
-    <!-- page navigation with 5 pages -->
-    <br><br>
-    <nav aria-label="Page navigation">
-      <ul class="pagination">
-	<li>
-	  <a href="#" aria-label="Previous">
-            <span aria-hidden="true">&laquo;</span>
-	  </a>
-	</li>
-	<li><a href="#">1</a></li>
-	<li><a href="#">2</a></li>
-	<li><a href="#">3</a></li>
-	<li><a href="#">4</a></li>
-	<li><a href="#">5</a></li>
-	<li>
-	  <a href="#" aria-label="Next">
-            <span aria-hidden="true">&raquo;</span>
-	  </a>
-	</li>
-      </ul>
-    </nav>
     
     <!-- Colorized inputs (Showing success or whatnot) -->
 
@@ -207,6 +177,7 @@
       <span id="inputGroupSuccess1Status" class="sr-only">(success)</span>
     </div>
 
+    
     <!-- Disabled field sets -->
     <form>
       <fieldset disabled>
@@ -256,12 +227,69 @@
     </div>
     
 
-    <!-- 4:3 aspect ratio -->
+    <!-- 16:9 aspect ratio -->
     <div class="container">
-    <div class="embed-responsive embed-responsive-4by3">
+    <div class="embed-responsive embed-responsive-16by9">
       <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"></iframe>
     </div>
     </div>
 
+    
+    <br><br>
+    <!-- progress bar with percentage -->
+    <div class="progress">
+      <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+	100%
+      </div>
+    </div>
+
+
+     <br><br>
+    <!-- page navigation with 5 pages -->
+    <br><br>
+    <nav aria-label="Page navigation">
+      <ul class="pagination">
+	<li>
+	  <a href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+	  </a>
+	</li>
+	<li><a href="#">1</a></li>
+	<li><a href="#">2</a></li>
+	<li><a href="#">3</a></li>
+	<li><a href="#">4</a></li>
+	<li><a href="#">5</a></li>
+	<li>
+	  <a href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+	  </a>
+	</li>
+      </ul>
+    </nav>
+    
+
+    <pre>
+    &lt;nav aria-label="Page navigation"&gt;
+      &lt;ul class="pagination"&gt;
+	&lt;li&gt;
+	  &lt;a href="#" aria-label="Previous"&gt;
+            &lt;span aria-hidden="true">&laquo;&lt;/span&gt;
+	  &lt;/a&gt;
+	&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#"&gt;4&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#"&gt;5&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;
+	  &lt;a href="#" aria-label="Next"&gt;
+            &lt;span aria-hidden="true"&gt;&raquo;&lt;/span&gt;
+	  &lt;/a&gt;
+	&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/nav&gt;
+    </pre>
+
+    
   </body>
 </html>
