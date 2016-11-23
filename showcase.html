@@ -15,9 +15,30 @@
 
     <div class="container">
 
+      <nav aria-label="Page navigation">
+	<ul class="pagination">
+	  <li><a href="#">Feature Links</a></li>
+	  <li><a href="#1">1</a></li>
+	  <li><a href="#2">2</a></li>
+	  <li><a href="#3">3</a></li>
+	  <li><a href="#4">4</a></li>
+	  <li><a href="#5">5</a></li>
+	  <li><a href="#6">6</a></li>
+	  <li><a href="#7">7</a></li>
+	  <li><a href="#8">8</a></li>
+	  <li><a href="#9">9</a></li>
+	  <li><a href="#10">10</a></li>
+	  <li><a href="#11">11</a></li>
+	  <li><a href="#12">12</a></li>
+	  <li><a href="#13">13</a></li>
+	  <li><a href="#14">14</a></li>
+	  <li><a href="#15">15</a></li>
+	</ul>
+      </nav>
+      
       <div class="alert alert-warning alert-dismissible" role="alert">
 	<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-	<strong>Warning!</strong> Better check yourself, you're not looking too good.
+	<strong>Hello there!</strong> This is an alert message. Above, you can click on numbers that link to the corresponding Bootstrap features displayed on this page.
       </div>
 
       
@@ -27,7 +48,7 @@
       <pre>
 	&lt;pre&gt;Sample text here...&lt;/pre&gt;</pre>
 
-      <h3 id="2">2. Alert Message  <small>Dismissable Warning</small></h3>
+      <h3 id="2">2. Alert Message  <small>Dismissible Warning</small></h3>
       <pre>
 	&lt;div class="alert alert-warning alert-dismissible" role="alert"&gt;
 	  &lt;button type="button" class="close" data-dismiss="alert" aria-label="Close"&gt;&lt;span aria-hidden="true"&gt;&times;&lt;/span&gt;&lt;/button&gt;
@@ -35,7 +56,7 @@
 	&lt;/div&gt;</pre>
 
       
-      <h3>Buttons with Various Icons  <small>Glyphicons</small></h3>
+      <h3 id="3">3. Buttons  <small>Glyphicons and Anchors</small></h3>
       <!-- buttons with icons and dropdown menu -->
       <div class="btn-group" role="group" aria-label="...">
 	<button type="button" class="glyphicon glyphicon-heart-empty"></button>
@@ -66,8 +87,24 @@
 	  &lt;button type="button" class="glyphicon glyphicon-trash"&gt;&lt;/button&gt;
 	&lt;/div&gt;</pre>
 
+      <br>
+
+      <a href="#" class="btn btn-primary btn-lg active" role="button">Primary link</a>
+      <a href="#" class="btn btn-default btn-lg active" role="button">Link</a>
+
+      <a href="#" class="btn btn-primary btn-lg disabled" role="button">Primary link</a>
+      <a href="#" class="btn btn-default btn-lg disabled" role="button">Link</a>
+
+      <br><br>
       
-      <h3 id="3">3. Attributes <small>Hovering over an attribute gives an explanation</small> </h3>
+      <pre>
+	&lt;a href="#" class="btn btn-primary btn-lg active" role="button"&gt;Primary link&lt;/a&gt;
+	&lt;a href="#" class="btn btn-default btn-lg active" role="button"&gt;Link&lt;/a&gt;
+
+	&lt;a href="#" class="btn btn-primary btn-lg disabled" role="button"&gt;Primary link&lt;/a&gt;
+	&lt;a href="#" class="btn btn-default btn-lg disabled" role="button"&gt;Link&lt;/a&gt;</pre>
+      
+      <h3 id="4">4. Attributes <small>Hovering over an attribute gives an explanation</small> </h3>
       <p class="lead"> Hover over # to find an attribute!
 	<abbr title="number of columns between the current value and next value on a table">#</abbr>
       </p>
@@ -76,7 +113,7 @@
 	&lt;abbr title="number of columns between the current value and next value on a table"&gt;#&lt;/abbr&gt;</pre>
      
       <!-- Rows?? -->
-      <h3 id="4">4. Row Spacing <small>col-<abbr title="md stands for medium device. xs would be extra small">md</abbr>-<abbr title="number of columns between the current value and next value on a table">#</abbr> quickly allows spacing of values in a table</small></h3>
+      <h3 id="5">5. Row Spacing <small>col-<abbr title="md stands for medium device. xs would be extra small">md</abbr>-<abbr title="number of columns between the current value and next value on a table">#</abbr> quickly allows spacing of values in a table</small></h3>
       <p id="small">There's a total of 12 columns. </p>
       <div class="container">
 	<div class="row show-grid">
@@ -144,7 +181,7 @@
 	&lt;/div&gt;</pre>
 
       
-      <h3 id="5">5. Variables</h3>
+      <h3 id="6">6. Variables</h3>
       <var>y</var> = <var>m</var><var>x</var> + <var>b</var>
 
       <pre>
@@ -166,7 +203,7 @@
       </tr>
       -->
       
-      <h3 id="6">6. Hover tables and Fancy Coloring </h3>
+      <h3 id="7">7. Hover tables and Fancy Coloring </h3>
       <table class="table table-hover">
 	<tr>
 	  <td class="active">Active</td>
@@ -260,7 +297,7 @@
       
 
       <!-- nicely formatted form -->
-      <h3 id="7">7. Preformatted forms </h3>
+      <h3 id="8">8. Preformatted forms </h3>
       <div class="input-group">
 	<span class="input-group-addon" id="basic-addon1">@</span>
 	<input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
@@ -310,7 +347,7 @@
 
       
       <!-- Colorized inputs (Showing success or whatnot) -->
-      <h3 id="8">8. Colorized inputs </h3>
+      <h3 id="9">9. Colorized inputs </h3>
 
       <div class="form-group has-success has-feedback">
 	<label class="control-label" for="inputSuccess2">Input with success</label>
@@ -371,7 +408,7 @@
 
       
       <!-- Disabled field sets -->
-      <h3 id="9">9. Disabled field sets </h3>
+      <h3 id="10">10. Disabled field sets </h3>
       <form>
 	<fieldset disabled>
 	  <div class="form-group">
@@ -419,7 +456,7 @@
 
       
       <!-- Checkboxes -->
-      <h3 id="10">10. Checkboxes</h3>
+      <h3 id="11">11. Checkboxes</h3>
       <div class="has-success">
 	<div class="checkbox">
 	  <label>
@@ -472,7 +509,7 @@
 	&lt;/div&gt;</pre>
 
       
-      <h3 id="11">11. Adding Media  <small>Responsive Images and Image Thumbnails</small></h3>
+      <h3 id="12">12. Adding Media  <small>Responsive Images and Image Thumbnails</small></h3>
 
       <img src="https://media1.britannica.com/eb-media/05/96205-004-CFC438E3.jpg" class="img-thumbnail" alt="Responsive image">
 
@@ -498,7 +535,7 @@
 	&lt;/div&gt;</pre>
       
 
-      <h3 id="12">12. Adding Media  <small>Embedding Videos</small></h3>
+      <h3 id="13">13. Adding Media  <small>Embedding Videos</small></h3>
       <!-- 16:9 aspect ratio -->
       <div class="container">
 	<div class="embed-responsive embed-responsive-16by9">
@@ -516,8 +553,7 @@
 	&lt;/div&gt;</pre>
 
       
-      <br><br>
-      <h3 id="13">13. Tracking Progress  <small>Progress Bar</small></h3>
+      <h3 id="14">14. Tracking Progress  <small>Progress Bar</small></h3>
       <!-- progress bar with percentage -->
       <div class="progress">
 	<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
@@ -533,7 +569,10 @@
 	&lt;/div&gt;</pre>
 
 
-      <h3 id="14">14. Moving Within a Page  <small>Page Navigation</small></h3>
+      <h3 id="15">15. Moving Within a Page  <small>Page Navigation</small></h3>
+      (See top of the page for the page navigation bar.)
+      <br><br>
+      <!--
       <nav aria-label="Page navigation">
 	<ul class="pagination">
 	  <li>
@@ -555,6 +594,7 @@
 	  <li><a href="#12">12</a></li>
 	  <li><a href="#13">13</a></li>
 	  <li><a href="#14">14</a></li>
+	  <li><a href="#15">15</a></li>
 	  <li>
 	    <a href="#" aria-label="Next">
               <span aria-hidden="true">&raquo;</span>
@@ -562,28 +602,38 @@
 	  </li>
 	</ul>
       </nav>
-      
+      -->
 
       <pre>
 	&lt;nav aria-label="Page navigation"&gt;
-	&lt;ul class="pagination"&gt;
-	  &lt;li&gt;
-	    &lt;a href="#" aria-label="Previous"&gt;
-              &lt;span aria-hidden="true"&gt;&laquo;&lt;/span&gt;
-	    &lt;/a&gt;
-	  &lt;/li&gt;
-	  &lt;li&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
-	  &lt;li&gt;&lt;a href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
-	  &lt;li&gt;&lt;a href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
-	  &lt;li&gt;&lt;a href="#"&gt;4&lt;/a&gt;&lt;/li&gt;
-	  &lt;li&gt;&lt;a href="#"&gt;5&lt;/a&gt;&lt;/li&gt;
-	  &lt;li&gt;
-	    &lt;a href="#" aria-label="Next"&gt;
-              &lt;span aria-hidden="true"&gt;&raquo;&lt;/span&gt;
-	    &lt;/a&gt;
-	  &lt;/li&gt;
-	&lt;/ul&gt;
-      &lt;/nav&gt;</pre>
+	  &lt;ul class="pagination"&gt;
+	    &lt;li&gt;
+	      &lt;a href="#" aria-label="Previous"&gt;
+		&lt;span aria-hidden="true"&gt;&laquo;&lt;/span&gt;
+	      &lt;/a&gt;
+	    &lt;/li&gt;
+	    &lt;li&gt;&lt;a href="#1"&gt;1&lt;/a&gt;&lt;/li&gt;
+	    &lt;li&gt;&lt;a href="#2"&gt;2&lt;/a&gt;&lt;/li&gt;
+	    &lt;li&gt;&lt;a href="#3"&gt;3&lt;/a&gt;&lt;/li&gt;
+	    &lt;li&gt;&lt;a href="#4"&gt;4&lt;/a&gt;&lt;/li&gt;
+	    &lt;li&gt;&lt;a href="#5"&gt;5&lt;/a&gt;&lt;/li&gt;
+	    &lt;li&gt;&lt;a href="#6"&gt;6&lt;/a&gt;&lt;/li&gt;
+	    &lt;li&gt;&lt;a href="#7"&gt;7&lt;/a&gt;&lt;/li&gt;
+	    &lt;li&gt;&lt;a href="#8"&gt;8&lt;/a&gt;&lt;/li&gt;
+	    &lt;li&gt;&lt;a href="#9"&gt;9&lt;/a&gt;&lt;/li&gt;
+	    &lt;li&gt;&lt;a href="#10"&gt;10&lt;/a&gt;&lt;/li&gt;
+	    &lt;li&gt;&lt;a href="#11"&gt;11&lt;/a&gt;&lt;/li&gt;
+	    &lt;li&gt;&lt;a href="#12"&gt;12&lt;/a&gt;&lt;/li&gt;
+	    &lt;li&gt;&lt;a href="#13"&gt;13&lt;/a&gt;&lt;/li&gt;
+	    &lt;li&gt;&lt;a href="#14"&gt;14&lt;/a&gt;&lt;/li&gt;
+	    &lt;li&gt;&lt;a href="#15"&gt;15&lt;/a&gt;&lt;/li&gt;
+	    &lt;li&gt;
+	      &lt;a href="#" aria-label="Next"&gt;
+		&lt;span aria-hidden="true"&gt;&raquo;&lt;/span&gt;
+	      &lt;/a&gt;
+	    &lt;/li&gt;
+	  &lt;/ul&gt;
+	&lt;/nav&gt;</pre>
 
     </div>
     
