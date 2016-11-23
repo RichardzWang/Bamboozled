@@ -10,21 +10,6 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
   </head>
-
-  <!-- 
-       layout:
-       - 1 row on top that lists/has links to different features we will discuss
-       * links as in use the class as href?? dw said something about it in class before
-       * dropdown menu and buttons could also go there??
-       - 1 heading
-       - short description in lead paragraph
-       - alert
-       - sample form
-       - inputs with diff success and disabled inputs
-       - 100% bar
-       - page numbers at bottom
-    -->
-
   
   <body>
 
@@ -39,8 +24,17 @@
       <h1>Cool Bootstrap Features</h1>
 
       <h3>Boxes with Preserved Spaces and Line Breaks  <small>Code Blocks</small></h3>
-      <pre>&lt;pre&gt;Sample text here...&lt;/pre&gt;</pre>
+      <pre>
+	&lt;pre&gt;Sample text here...&lt;/pre&gt;</pre>
 
+      <h3>Alert Message  <small>Dismissable Warning</small></h3>
+      <pre>
+	&lt;div class="alert alert-warning alert-dismissible" role="alert"&gt;
+	  &lt;button type="button" class="close" data-dismiss="alert" aria-label="Close"&gt;&lt;span aria-hidden="true"&gt;&times;&lt;/span&gt;&lt;/button&gt;
+	  &lt;strong&gt;Warning!&lt;/strong&gt; Better check yourself, you're not looking too good.
+	&lt;/div&gt;</pre>
+
+      
       <h3>Buttons with Various Icons  <small>Glyphicons</small></h3>
       <!-- buttons with icons and dropdown menu -->
       <div class="btn-group" role="group" aria-label="...">
@@ -67,17 +61,19 @@
       
       <pre>
 	&lt;div class="btn-group" role="group" aria-label="..."&gt;
-	&lt;button type="button" class="glyphicon glyphicon-heart-empty"&gt;&lt;/button&gt;
-	&lt;button type="button" class="glyphicon glyphicon-thumbs-up"&gt;&lt;/button&gt;
-	&lt;button type="button" class="glyphicon glyphicon-trash"&gt;&lt;/button&gt;
-      </pre>
-      
-      <br><br>
+	  &lt;button type="button" class="glyphicon glyphicon-heart-empty"&gt;&lt;/button&gt;
+	  &lt;button type="button" class="glyphicon glyphicon-thumbs-up"&gt;&lt;/button&gt;
+	  &lt;button type="button" class="glyphicon glyphicon-trash"&gt;&lt;/button&gt;
+	&lt;/div&gt;</pre>
 
+      
       <h3> Attributes <small>Hovering over an attribute gives an explanation</small> </h3>
       <p class="lead"> Hover over # to find an attribute!
 	<abbr title="number of columns between the current value and next value on a table">#</abbr>
       </p>
+
+      <pre>
+	&lt;abbr title="number of columns between the current value and next value on a table"&gt;#&lt;/abbr&gt;</pre>
      
       <!-- Rows?? -->
       <h3> Row Spacing <small>col-<abbr title="md stands for medium device. xs would be extra small">md</abbr>-<abbr title="number of columns between the current value and next value on a table">#</abbr> quickly allows spacing of values in a table</small></h3>
@@ -112,12 +108,47 @@
 	  <div class="col-md-6">.col-md-6</div>
 	</div>
       </div>
-      
+
       <br>
+      
+      <pre>
+	&lt;div class="container"&gt;
+	  &lt;div class="row show-grid"&gt;
+	    &lt;div class="col-md-1"&gt;Item 1&lt;/div&gt;
+	    &lt;div class="col-md-1"&gt;Item 2&lt;/div&gt;
+	    &lt;div class="col-md-1"&gt;Item 3&lt;/div&gt;
+	    &lt;div class="col-md-1"&gt;Item 4&lt;/div&gt;
+	    &lt;div class="col-md-1"&gt;Item 5&lt;/div&gt;
+	    &lt;div class="col-md-1"&gt;Item 6&lt;/div&gt;
+	    &lt;div class="col-md-1"&gt;Item 7&lt;/div&gt;
+	    &lt;div class="col-md-1"&gt;Item 8&lt;/div&gt;
+	    &lt;div class="col-md-1"&gt;Item 9&lt;/div&gt;
+	    &lt;div class="col-md-1"&gt;Item 10&lt;/div&gt;
+	    &lt;div class="col-md-1"&gt;Item 11&lt;/div&gt;
+	    &lt;div class="col-md-1"&gt;Item 12&lt;/div&gt;
+	  &lt;/div&gt;
+
+	  &lt;div class="row"&gt;
+	    &lt;div class="col-md-8"&gt;Item 1 with 8 spaces&lt;/div&gt;
+	    &lt;div class="col-md-4"&gt;Item 2 with 4 spaces&lt;/div&gt;
+	  &lt;/div&gt;
+	  &lt;div class="row"&gt;
+	    &lt;div class="col-md-4"&gt;.col-md-4&lt;/div&gt;
+	    &lt;div class="col-md-4"&gt;.col-md-4&lt;/div&gt;
+	    &lt;div class="col-md-4"&gt;.col-md-4&lt;/div&gt;
+	  &lt;/div&gt;
+	  &lt;div class="row"&gt;
+	    &lt;div class="col-md-6"&gt;.col-md-6&lt;/div&gt;
+	    &lt;div class="col-md-6"&gt;.col-md-6&lt;/div&gt;
+	  &lt;/div&gt;
+	&lt;/div&gt;</pre>
+
+      
       <h3>Variables</h3>
       <var>y</var> = <var>m</var><var>x</var> + <var>b</var>
 
-      <br><br>
+      <pre>
+	&lt;var&gt;y&lt;/var&gt; = &lt;var&gt;m&lt;/var&gt;&lt;var&gt;x&lt;/var&gt; + &lt;var&gt;b&lt;/var&gt;</pre>
 
       
       <!-- On rows -->
@@ -136,6 +167,7 @@
 	<td class="info">...</td>
       </tr>
 
+      
       <h3> Hover tables and Fancy Coloring </h3>
       <table class="table table-hover">
 	<tr>
@@ -181,6 +213,52 @@
 	  <td>Info?</td>
 	</tr>
       </table>
+
+      <pre>
+	&lt;table class="table table-hover"&gt;
+	  &lt;tr&gt;
+	    &lt;td class="active"&gt;Active&lt;/td&gt;
+	    &lt;td class="success"&gt;Success&lt;/td&gt;
+	    &lt;td class="warning"&gt;Warning&lt;/td&gt;
+	    &lt;td class="danger"&gt;Danger&lt;/td&gt;
+	    &lt;td class="info"&gt;Info&lt;/td&gt;
+	  &lt;/tr&gt;
+	  &lt;tr class="active"&gt;
+	    &lt;td class="active"&gt;Active&lt;/td&gt;
+	    &lt;td class="success"&gt;Success&lt;/td&gt;
+	    &lt;td class="warning"&gt;Warning&lt;/td&gt;
+	    &lt;td class="danger"&gt;Danger&lt;/td&gt;
+	    &lt;td class="info"&gt;Info&lt;/td&gt;
+	  &lt;/tr&gt;
+	  &lt;tr class="success"&gt;...
+	    &lt;td&gt;Entire&lt;/td&gt;
+	    &lt;td&gt;Row&lt;/td&gt;
+	    &lt;td&gt;Has&lt;/td&gt;
+	    &lt;td&gt;Success&lt;/td&gt;
+	    &lt;td&gt;!&lt;/td&gt;
+	  &lt;/tr&gt;
+	  &lt;tr class="warning"&gt;
+	    &lt;td&gt;Entire&lt;/td&gt;
+	    &lt;td&gt;Row&lt;/td&gt;
+	    &lt;td&gt;Is&lt;/td&gt;
+	    &lt;td&gt;a&lt;/td&gt;
+	    &lt;td&gt;Warning&lt;/td&gt;
+	  &lt;/tr&gt;
+	  &lt;tr class="danger"&gt;
+	    &lt;td&gt;Entire&lt;/td&gt;
+	    &lt;td&gt;Row&lt;/td&gt;
+	    &lt;td&gt;Screams&lt;/td&gt;
+	    &lt;td&gt;Danger&lt;/td&gt;
+	    &lt;td&gt;!&lt;/td&gt;
+	  &lt;/tr&gt;
+	  &lt;tr class="info"&gt;
+	    &lt;td&gt;Entire&lt;/td&gt;
+	    &lt;td&gt;Row&lt;/td&gt;
+	    &lt;td&gt;Is&lt;/td&gt;
+	    &lt;td&gt;Colored&lt;/td&gt;
+	    &lt;td&gt;Info?&lt;/td&gt;
+	  &lt;/tr&gt;
+	&lt;/table&gt;</pre>
       
 
       <!-- nicely formatted form -->
@@ -208,6 +286,30 @@
       </div>
 
       <br>
+      
+      <pre>
+	&lt;div class="input-group"&gt;
+	  &lt;span class="input-group-addon" id="basic-addon1"&gt;@&lt;/span&gt;
+	  &lt;input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1"&gt;
+	&lt;/div&gt;
+
+	&lt;div class="input-group"&gt;
+	  &lt;input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2"&gt;
+	  &lt;span class="input-group-addon" id="basic-addon2"&gt;@example.com&lt;/span&gt;
+	&lt;/div&gt;
+
+	&lt;div class="input-group"&gt;
+	  &lt;span class="input-group-addon"&gt;$&lt;/span&gt;
+	  &lt;input type="text" class="form-control" aria-label="Amount (to the nearest dollar)"&gt;
+	  &lt;span class="input-group-addon"&gt;.00&lt;/span&gt;
+	&lt;/div&gt;
+
+	&lt;label for="basic-url"&gt;Your vanity URL&lt;/label&gt;
+	&lt;div class="input-group"&gt;
+	  &lt;span class="input-group-addon" id="basic-addon3"&gt;https://example.com/users/&lt;/span&gt;
+	  &lt;input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3"&gt;
+	&lt;/div&gt;</pre>
+
       
       <!-- Colorized inputs (Showing success or whatnot) -->
       <h3> Colorized inputs </h3>
@@ -240,7 +342,35 @@
 	<span id="inputGroupSuccess1Status" class="sr-only">(success)</span>
       </div>
 
-      <br>
+      <pre>
+	&lt;div class="form-group has-success has-feedback"&gt;
+	  &lt;label class="control-label" for="inputSuccess2"&gt;Input with success&lt;/label&gt;
+	  &lt;input type="text" class="form-control" id="inputSuccess2" aria-describedby="inputSuccess2Status"&gt;
+	  &lt;span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"&gt;&lt;/span&gt;
+	  &lt;span id="inputSuccess2Status" class="sr-only"&gt;(success)&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class="form-group has-warning has-feedback"&gt;
+	  &lt;label class="control-label" for="inputWarning2"&gt;Input with warning&lt;/label&gt;
+	  &lt;input type="text" class="form-control" id="inputWarning2" aria-describedby="inputWarning2Status"&gt;
+	  &lt;span class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true"&gt;&lt;/span&gt;
+	  &lt;span id="inputWarning2Status" class="sr-only"&gt;(warning)&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class="form-group has-error has-feedback"&gt;
+	  &lt;label class="control-label" for="inputError2"&gt;Input with error&lt;/label&gt;
+	  &lt;input type="text" class="form-control" id="inputError2" aria-describedby="inputError2Status"&gt;
+	  &lt;span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"&gt;&lt;/span&gt;
+	  &lt;span id="inputError2Status" class="sr-only"&gt;(error)&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class="form-group has-success has-feedback"&gt;
+	  &lt;label class="control-label" for="inputGroupSuccess1"&gt;Input group with success&lt;/label&gt;
+	  &lt;div class="input-group"&gt;
+	    &lt;span class="input-group-addon"&gt;@&lt;/span&gt;
+	    &lt;input type="text" class="form-control" id="inputGroupSuccess1" aria-describedby="inputGroupSuccess1Status"&gt;
+	  &lt;/div&gt;
+	  &lt;span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"&gt;&lt;/span&gt;
+	  &lt;span id="inputGroupSuccess1Status" class="sr-only"&gt;(success)&lt;/span&gt;
+	&lt;/div&gt;</pre>
+
       
       <!-- Disabled field sets -->
       <h3> Disabled field sets </h3>
@@ -266,6 +396,29 @@
       </form>
 
       <br>
+      
+      <pre>
+	&lt;form&gt;
+	  &lt;fieldset disabled&gt;
+	    &lt;div class="form-group"&gt;
+	      &lt;label for="disabledTextInput"&gt;Disabled input&lt;/label&gt;
+	      &lt;input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input"&gt;
+	    &lt;/div&gt;
+	    &lt;div class="form-group"&gt;
+	      &lt;label for="disabledSelect"&gt;Disabled select menu&lt;/label&gt;
+	      &lt;select id="disabledSelect" class="form-control"&gt;
+		&lt;option&gt;Disabled select&lt;/option&gt;
+	      &lt;/select&gt;
+	    &lt;/div&gt;
+	    &lt;div class="checkbox"&gt;
+	      &lt;label&gt;
+		&lt;input type="checkbox"&gt; Can't check this
+	      &lt;/label&gt;
+	    &lt;/div&gt;
+	    &lt;button type="submit" class="btn btn-primary"&gt;Submit&lt;/button&gt;
+	  &lt;/fieldset&gt;
+	&lt;/form&gt;</pre>
+
       
       <!-- Checkboxes -->
       <h3>Checkboxes</h3>
@@ -294,6 +447,33 @@
 	</div>
       </div>
 
+      <pre>
+	&lt;div class="has-success"&gt;
+	  &lt;div class="checkbox"&gt;
+	    &lt;label&gt;
+	      &lt;input type="checkbox" id="checkboxSuccess" value="option1"&gt;
+	      Checkbox with success
+	    &lt;/label&gt;
+	  &lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="has-warning"&gt;
+	  &lt;div class="checkbox"&gt;
+	    &lt;label&gt;
+	      &lt;input type="checkbox" id="checkboxWarning" value="option1"&gt;
+	      Checkbox with warning
+	    &lt;/label&gt;
+	  &lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="has-error"&gt;
+	  &lt;div class="checkbox"&gt;
+	    &lt;label&gt;
+	      &lt;input type="checkbox" id="checkboxError" value="option1"&gt;
+	      Checkbox with error
+	    &lt;/label&gt;
+	  &lt;/div&gt;
+	&lt;/div&gt;</pre>
+
+      
       <h3>Adding Media  <small>Responsive Images and Image Thumbnails</small></h3>
 
       <img src="https://media1.britannica.com/eb-media/05/96205-004-CFC438E3.jpg" class="img-thumbnail" alt="Responsive image">
@@ -306,8 +486,21 @@
       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Boostrap_logo.svg/2000px-Boostrap_logo.svg.png" class="pull-right" alt="..."  width="150" height="150">
       </div>
 
+      <br>
+      
+      <pre>
+	&lt;img src="https://media1.britannica.com/eb-media/05/96205-004-CFC438E3.jpg" class="img-thumbnail" alt="Responsive image"&gt;
 
-      <h3>Adding Media  <small>Embeding Videos</small></h3>
+	&lt;img src="http://foodnetwork.sndimg.com/content/dam/images/food/fullset/2011/10/12/0/FNM-110111_Neelys-Thanksgiving-041a_s4x3.jpg"  class="img-fluid" class="rounded float-md-right" alt="Responsive image" width="375" height="281"&gt;
+
+	&lt;br&gt;
+	&lt;div class ="container"&gt;
+	  &lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Boostrap_logo.svg/2000px-Boostrap_logo.svg.png"  class="pull-left" alt="..."  width="150" height="150"&gt;
+	  &lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Boostrap_logo.svg/2000px-Boostrap_logo.svg.png" class="pull-right" alt="..."  width="150" height="150"&gt;
+	&lt;/div&gt;</pre>
+      
+
+      <h3>Adding Media  <small>Embedding Videos</small></h3>
       <!-- 16:9 aspect ratio -->
       <div class="container">
 	<div class="embed-responsive embed-responsive-16by9">
@@ -315,13 +508,15 @@
 	</div>
       </div>
 
+      <br>
+      
       <pre>
 	&lt;div class="container"&gt;
 	  &lt;div class="embed-responsive embed-responsive-16by9"&gt;
 	    &lt;iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"&gt;&lt;/iframe&gt;
 	  &lt;/div&gt;
-	&lt;/div&gt;
-      </pre>
+	&lt;/div&gt;</pre>
+
       
       <br><br>
       <h3>Tracking Progress  <small>Progress Bar</small></h3>
@@ -334,16 +529,14 @@
 
       <pre>
 	&lt;div class="progress"&gt;
-	&lt;div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"&gt;
-	  100%
-	&lt;/div&gt;
-      &lt;/div&gt;
-      </pre>
+	  &lt;div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"&gt;
+	    100%
+	  &lt;/div&gt;
+	&lt;/div&gt;</pre>
 
 
       <h3>Moving Between Pages  <small>Page Navigation</small></h3>
       <!-- page navigation with 5 pages -->
-      <br><br>
       <nav aria-label="Page navigation">
 	<ul class="pagination">
 	  <li>
@@ -368,24 +561,23 @@
       <pre>
 	&lt;nav aria-label="Page navigation"&gt;
 	&lt;ul class="pagination"&gt;
-	&lt;li&gt;
-	&lt;a href="#" aria-label="Previous"&gt;
-        &lt;span aria-hidden="true">&laquo;&lt;/span&gt;
-	&lt;/a&gt;
-	&lt;/li&gt;
-	&lt;li&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
-	&lt;li&gt;&lt;a href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
-	&lt;li&gt;&lt;a href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
-	&lt;li&gt;&lt;a href="#"&gt;4&lt;/a&gt;&lt;/li&gt;
-	&lt;li&gt;&lt;a href="#"&gt;5&lt;/a&gt;&lt;/li&gt;
-	&lt;li&gt;
-	&lt;a href="#" aria-label="Next"&gt;
-        &lt;span aria-hidden="true"&gt;&raquo;&lt;/span&gt;
-	&lt;/a&gt;
-	&lt;/li&gt;
+	  &lt;li&gt;
+	    &lt;a href="#" aria-label="Previous"&gt;
+              &lt;span aria-hidden="true"&gt;&laquo;&lt;/span&gt;
+	    &lt;/a&gt;
+	  &lt;/li&gt;
+	  &lt;li&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+	  &lt;li&gt;&lt;a href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
+	  &lt;li&gt;&lt;a href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+	  &lt;li&gt;&lt;a href="#"&gt;4&lt;/a&gt;&lt;/li&gt;
+	  &lt;li&gt;&lt;a href="#"&gt;5&lt;/a&gt;&lt;/li&gt;
+	  &lt;li&gt;
+	    &lt;a href="#" aria-label="Next"&gt;
+              &lt;span aria-hidden="true"&gt;&raquo;&lt;/span&gt;
+	    &lt;/a&gt;
+	  &lt;/li&gt;
 	&lt;/ul&gt;
-	&lt;/nav&gt;
-      </pre>
+      &lt;/nav&gt;</pre>
 
     </div>
     
