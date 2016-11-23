@@ -12,269 +12,291 @@
   </head>
 
   <!-- 
-      layout:
-      - 1 row on top that lists/has links to different features we will discuss
-      * links as in use the class as href?? dw said something about it in class before
-      * dropdown menu and buttons could also go there??
-      - 1 heading
-      - short description in lead paragraph
-      - alert
-      - sample form
-      - inputs with diff success and disabled inputs
-      - 100% bar
-      - page numbers at bottom
-      -->
+       layout:
+       - 1 row on top that lists/has links to different features we will discuss
+       * links as in use the class as href?? dw said something about it in class before
+       * dropdown menu and buttons could also go there??
+       - 1 heading
+       - short description in lead paragraph
+       - alert
+       - sample form
+       - inputs with diff success and disabled inputs
+       - 100% bar
+       - page numbers at bottom
+    -->
 
   
   <body>
 
+    <div class="container">
 
-
-    <div class="alert alert-warning alert-dismissible" role="alert">
-      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-      <strong>Warning!</strong> Better check yourself, you're not looking too good.
-    </div>
-
-
-    <br><br>
-    <!-- buttons with icons and dropdown menu -->
-    <div class="btn-group" role="group" aria-label="...">
-      <button type="button" class="glyphicon glyphicon-heart-empty"></button>
-      <button type="button" class="glyphicon glyphicon-thumbs-up"></button>
-      <button type="button" class="glyphicon glyphicon-trash"></button>
-      <!--
-      <div class="btn-group" role="group">
-	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	  Dropdown
-	  <span class="caret"></span>
-	</button>
-	<ul class="dropdown-menu">
-	  <li><a href="#">Dropdown link</a></li>
-	  <li><a href="#">Dropdown link</a></li>
-	  <li role="separator" class="divider"></li>
-	  <li class="disabled"><a href="#">Disabled link</a></li>
-	</ul>
+      <div class="alert alert-warning alert-dismissible" role="alert">
+	<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	<strong>Warning!</strong> Better check yourself, you're not looking too good.
       </div>
-      -->
-    </div>
-    
-    
-    <h1>Cool Bootstrap Features</h1>
-    
 
-    <!-- Rows?? -->
-    <div class="row show-grid">
-      <div class="col-md-1">Item 1</div>
-      <div class="col-md-1">Item 2</div>
-      <div class="col-md-1">Item 3</div>
-      <div class="col-md-1">Item 4</div>
-      <div class="col-md-1">Item 5</div>
-      <div class="col-md-1">Item 6</div>
-      <div class="col-md-1">Item 7</div>
-      <div class="col-md-1">Item 8</div>
-      <div class="col-md-1">Item 9</div>
-      <div class="col-md-1">Item 10</div>
-      <div class="col-md-1">Item 11</div>
-      <div class="col-md-1">Item 12</div>
-    </div>
-    <div class="row">
-      <div class="col-md-8">Item 1 with 8 spaces</div>
-      <div class="col-md-4">Item 2 with 4 spaces</div>
-    </div>
-    <div class="row">
-      <div class="col-md-4">.</div>
-      <div class="col-md-4">.col-md-4</div>
-      <div class="col-md-4">.col-md-4</div>
-    </div>
-    <div class="row">
-      <div class="col-md-6">.col-md-6</div>
-      <div class="col-md-6">.col-md-6</div>
-    </div>
-
-    <!-- Headings -->
-    <h1>h1. Bootstrap heading <small>Secondary text</small></h1>
-    <h2>h2. Bootstrap heading <small>Secondary text</small></h2>
-    <h3>h3. Bootstrap heading <small>Secondary text</small></h3>
-    <h4>h4. Bootstrap heading <small>Secondary text</small></h4>
-    <h5>h5. Bootstrap heading <small>Secondary text</small></h5>
-    <h6>h6. Bootstrap heading <small>Secondary text</small></h6>
-
-    <p class="lead">...
-      <abbr title="attribute">attr</abbr>
-    </p>
-    
-    <pre>&lt;pre&gt;Sample text here...&lt;/pre&gt;</pre>
-
-    <var>y</var> = <var>m</var><var>x</var> + <var>b</var>
-    
-    <!-- On rows -->
-    <tr class="active">...</tr>
-    <tr class="success">...</tr>
-    <tr class="warning">...</tr>
-    <tr class="danger">...</tr>
-    <tr class="info">...</tr>
-    
-    <!-- On cells (`td` or `th`) -->
-    <tr>
-      <td class="active">...</td>
-      <td class="success">...</td>
-      <td class="warning">...</td>
-      <td class="danger">...</td>
-      <td class="info">...</td>
-    </tr>
-
-    <!-- nicely formatted form -->
-    <div class="input-group">
-      <span class="input-group-addon" id="basic-addon1">@</span>
-      <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
-    </div>
-
-    <div class="input-group">
-      <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
-      <span class="input-group-addon" id="basic-addon2">@example.com</span>
-    </div>
-
-    <div class="input-group">
-      <span class="input-group-addon">$</span>
-      <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-      <span class="input-group-addon">.00</span>
-    </div>
-
-    <label for="basic-url">Your vanity URL</label>
-    <div class="input-group">
-      <span class="input-group-addon" id="basic-addon3">https://example.com/users/</span>
-      <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-    </div>
       
-    
-    <!-- Colorized inputs (Showing success or whatnot) -->
+      <h1>Cool Bootstrap Features</h1>
 
-    <div class="form-group has-success has-feedback">
-      <label class="control-label" for="inputSuccess2">Input with success</label>
-      <input type="text" class="form-control" id="inputSuccess2" aria-describedby="inputSuccess2Status">
-      <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
-      <span id="inputSuccess2Status" class="sr-only">(success)</span>
-    </div>
-    <div class="form-group has-warning has-feedback">
-      <label class="control-label" for="inputWarning2">Input with warning</label>
-      <input type="text" class="form-control" id="inputWarning2" aria-describedby="inputWarning2Status">
-      <span class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true"></span>
-      <span id="inputWarning2Status" class="sr-only">(warning)</span>
-    </div>
-    <div class="form-group has-error has-feedback">
-      <label class="control-label" for="inputError2">Input with error</label>
-      <input type="text" class="form-control" id="inputError2" aria-describedby="inputError2Status">
-      <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
-      <span id="inputError2Status" class="sr-only">(error)</span>
-    </div>
-    <div class="form-group has-success has-feedback">
-      <label class="control-label" for="inputGroupSuccess1">Input group with success</label>
-      <div class="input-group">
-	<span class="input-group-addon">@</span>
-	<input type="text" class="form-control" id="inputGroupSuccess1" aria-describedby="inputGroupSuccess1Status">
+      <h3>Boxes with Preserved Spaces and Line Breaks | <small>Code Blocks</small></h3>
+      <pre>&lt;pre&gt;Sample text here...&lt;/pre&gt;</pre>
+
+      <h3>Buttons with Various Icons | <small>Glyphicons</small></h3>
+      <!-- buttons with icons and dropdown menu -->
+      <div class="btn-group" role="group" aria-label="...">
+	<button type="button" class="glyphicon glyphicon-heart-empty"></button>
+	<button type="button" class="glyphicon glyphicon-thumbs-up"></button>
+	<button type="button" class="glyphicon glyphicon-trash"></button>
+	<!--
+	    <div class="btn-group" role="group">
+	      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		Dropdown
+		<span class="caret"></span>
+	      </button>
+	      <ul class="dropdown-menu">
+		<li><a href="#">Dropdown link</a></li>
+		<li><a href="#">Dropdown link</a></li>
+		<li role="separator" class="divider"></li>
+		<li class="disabled"><a href="#">Disabled link</a></li>
+	      </ul>
+	    </div>
+	    -->
       </div>
-      <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
-      <span id="inputGroupSuccess1Status" class="sr-only">(success)</span>
-    </div>
 
-    
-    <!-- Disabled field sets -->
-    <form>
-      <fieldset disabled>
-	<div class="form-group">
-	  <label for="disabledTextInput">Disabled input</label>
-	  <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+      <br><br>
+      
+      <pre>
+	&lt;div class="btn-group" role="group" aria-label="..."&gt;
+	&lt;button type="button" class="glyphicon glyphicon-heart-empty"&gt;&lt;/button&gt;
+	&lt;button type="button" class="glyphicon glyphicon-thumbs-up"&gt;&lt;/button&gt;
+	&lt;button type="button" class="glyphicon glyphicon-trash"&gt;&lt;/button&gt;
+      </pre>
+      
+      <br><br>
+     
+      <!-- Rows?? -->
+      <div class="row show-grid">
+	<div class="col-md-1">Item 1</div>
+	<div class="col-md-1">Item 2</div>
+	<div class="col-md-1">Item 3</div>
+	<div class="col-md-1">Item 4</div>
+	<div class="col-md-1">Item 5</div>
+	<div class="col-md-1">Item 6</div>
+	<div class="col-md-1">Item 7</div>
+	<div class="col-md-1">Item 8</div>
+	<div class="col-md-1">Item 9</div>
+	<div class="col-md-1">Item 10</div>
+	<div class="col-md-1">Item 11</div>
+	<div class="col-md-1">Item 12</div>
+      </div>
+      <div class="row">
+	<div class="col-md-8">Item 1 with 8 spaces</div>
+	<div class="col-md-4">Item 2 with 4 spaces</div>
+      </div>
+      <div class="row">
+	<div class="col-md-4">.</div>
+	<div class="col-md-4">.col-md-4</div>
+	<div class="col-md-4">.col-md-4</div>
+      </div>
+      <div class="row">
+	<div class="col-md-6">.col-md-6</div>
+	<div class="col-md-6">.col-md-6</div>
+      </div>
+      
+
+      <p class="lead">...
+	<abbr title="attribute">attr</abbr>
+      </p>
+      
+      
+
+      <var>y</var> = <var>m</var><var>x</var> + <var>b</var>
+      
+      <!-- On rows -->
+      <tr class="active">...</tr>
+      <tr class="success">...</tr>
+      <tr class="warning">...</tr>
+      <tr class="danger">...</tr>
+      <tr class="info">...</tr>
+      
+      <!-- On cells (`td` or `th`) -->
+      <tr>
+	<td class="active">...</td>
+	<td class="success">...</td>
+	<td class="warning">...</td>
+	<td class="danger">...</td>
+	<td class="info">...</td>
+      </tr>
+
+      <!-- nicely formatted form -->
+      <div class="input-group">
+	<span class="input-group-addon" id="basic-addon1">@</span>
+	<input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+      </div>
+
+      <div class="input-group">
+	<input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
+	<span class="input-group-addon" id="basic-addon2">@example.com</span>
+      </div>
+
+      <div class="input-group">
+	<span class="input-group-addon">$</span>
+	<input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+	<span class="input-group-addon">.00</span>
+      </div>
+
+      <label for="basic-url">Your vanity URL</label>
+      <div class="input-group">
+	<span class="input-group-addon" id="basic-addon3">https://example.com/users/</span>
+	<input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+      </div>
+      
+      
+      <!-- Colorized inputs (Showing success or whatnot) -->
+
+      <div class="form-group has-success has-feedback">
+	<label class="control-label" for="inputSuccess2">Input with success</label>
+	<input type="text" class="form-control" id="inputSuccess2" aria-describedby="inputSuccess2Status">
+	<span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+	<span id="inputSuccess2Status" class="sr-only">(success)</span>
+      </div>
+      <div class="form-group has-warning has-feedback">
+	<label class="control-label" for="inputWarning2">Input with warning</label>
+	<input type="text" class="form-control" id="inputWarning2" aria-describedby="inputWarning2Status">
+	<span class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true"></span>
+	<span id="inputWarning2Status" class="sr-only">(warning)</span>
+      </div>
+      <div class="form-group has-error has-feedback">
+	<label class="control-label" for="inputError2">Input with error</label>
+	<input type="text" class="form-control" id="inputError2" aria-describedby="inputError2Status">
+	<span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+	<span id="inputError2Status" class="sr-only">(error)</span>
+      </div>
+      <div class="form-group has-success has-feedback">
+	<label class="control-label" for="inputGroupSuccess1">Input group with success</label>
+	<div class="input-group">
+	  <span class="input-group-addon">@</span>
+	  <input type="text" class="form-control" id="inputGroupSuccess1" aria-describedby="inputGroupSuccess1Status">
 	</div>
-	<div class="form-group">
-	  <label for="disabledSelect">Disabled select menu</label>
-	  <select id="disabledSelect" class="form-control">
-            <option>Disabled select</option>
-	  </select>
-	</div>
+	<span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+	<span id="inputGroupSuccess1Status" class="sr-only">(success)</span>
+      </div>
+
+      
+      <!-- Disabled field sets -->
+      <form>
+	<fieldset disabled>
+	  <div class="form-group">
+	    <label for="disabledTextInput">Disabled input</label>
+	    <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+	  </div>
+	  <div class="form-group">
+	    <label for="disabledSelect">Disabled select menu</label>
+	    <select id="disabledSelect" class="form-control">
+              <option>Disabled select</option>
+	    </select>
+	  </div>
+	  <div class="checkbox">
+	    <label>
+              <input type="checkbox"> Can't check this
+	    </label>
+	  </div>
+	  <button type="submit" class="btn btn-primary">Submit</button>
+	</fieldset>
+      </form>
+      
+      <!-- Checkboxes -->
+      <div class="has-success">
 	<div class="checkbox">
 	  <label>
-            <input type="checkbox"> Can't check this
+	    <input type="checkbox" id="checkboxSuccess" value="option1">
+	    Checkbox with success
 	  </label>
 	</div>
-	<button type="submit" class="btn btn-primary">Submit</button>
-      </fieldset>
-    </form>
-    
-    <!-- Checkboxes -->
-    <div class="has-success">
-      <div class="checkbox">
-	<label>
-	  <input type="checkbox" id="checkboxSuccess" value="option1">
-	  Checkbox with success
-	</label>
       </div>
-    </div>
-    <div class="has-warning">
-      <div class="checkbox">
-	<label>
-	  <input type="checkbox" id="checkboxWarning" value="option1">
-	  Checkbox with warning
-	</label>
+      <div class="has-warning">
+	<div class="checkbox">
+	  <label>
+	    <input type="checkbox" id="checkboxWarning" value="option1">
+	    Checkbox with warning
+	  </label>
+	</div>
       </div>
-    </div>
-    <div class="has-error">
-      <div class="checkbox">
-	<label>
-	  <input type="checkbox" id="checkboxError" value="option1">
-	  Checkbox with error
-	</label>
+      <div class="has-error">
+	<div class="checkbox">
+	  <label>
+	    <input type="checkbox" id="checkboxError" value="option1">
+	    Checkbox with error
+	  </label>
+	</div>
       </div>
-    </div>
-    
+      
 
-    <!-- 16:9 aspect ratio -->
-    <div class="container">
-    <div class="embed-responsive embed-responsive-16by9">
-      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"></iframe>
-    </div>
-    </div>
-
-    
-    <br><br>
-    <!-- progress bar with percentage -->
-    <div class="progress">
-      <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
-	100%
+      <h3>Adding Media | <small>Embeding Videos</small></h3>
+      <!-- 16:9 aspect ratio -->
+      <div class="container">
+	<div class="embed-responsive embed-responsive-16by9">
+	  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"></iframe>
+	</div>
       </div>
-    </div>
+
+      <pre>
+	&lt;div class="container"&gt;
+	  &lt;div class="embed-responsive embed-responsive-16by9"&gt;
+	    &lt;iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"&gt;&lt;/iframe&gt;
+	  &lt;/div&gt;
+	&lt;/div&gt;
+      </pre>
+      
+      <br><br>
+      <h3>Tracking Progress | <small>Progress Bar</small></h3>
+      <!-- progress bar with percentage -->
+      <div class="progress">
+	<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+	  100%
+	</div>
+      </div>
+
+      <pre>
+	&lt;div class="progress"&gt;
+	&lt;div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"&gt;
+	  100%
+	&lt;/div&gt;
+      &lt;/div&gt;
+      </pre>
 
 
-     <br><br>
-    <!-- page navigation with 5 pages -->
-    <br><br>
-    <nav aria-label="Page navigation">
-      <ul class="pagination">
-	<li>
-	  <a href="#" aria-label="Previous">
-            <span aria-hidden="true">&laquo;</span>
-	  </a>
-	</li>
-	<li><a href="#">1</a></li>
-	<li><a href="#">2</a></li>
-	<li><a href="#">3</a></li>
-	<li><a href="#">4</a></li>
-	<li><a href="#">5</a></li>
-	<li>
-	  <a href="#" aria-label="Next">
-            <span aria-hidden="true">&raquo;</span>
-	  </a>
-	</li>
-      </ul>
-    </nav>
-    
+      <h3>Moving Between Pages | <small>Page Navigation</small></h3>
+      <!-- page navigation with 5 pages -->
+      <br><br>
+      <nav aria-label="Page navigation">
+	<ul class="pagination">
+	  <li>
+	    <a href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+	    </a>
+	  </li>
+	  <li><a href="#">1</a></li>
+	  <li><a href="#">2</a></li>
+	  <li><a href="#">3</a></li>
+	  <li><a href="#">4</a></li>
+	  <li><a href="#">5</a></li>
+	  <li>
+	    <a href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+	    </a>
+	  </li>
+	</ul>
+      </nav>
+      
 
-    <pre>
-    &lt;nav aria-label="Page navigation"&gt;
-      &lt;ul class="pagination"&gt;
+      <pre>
+	&lt;nav aria-label="Page navigation"&gt;
+	&lt;ul class="pagination"&gt;
 	&lt;li&gt;
-	  &lt;a href="#" aria-label="Previous"&gt;
-            &lt;span aria-hidden="true">&laquo;&lt;/span&gt;
-	  &lt;/a&gt;
+	&lt;a href="#" aria-label="Previous"&gt;
+        &lt;span aria-hidden="true">&laquo;&lt;/span&gt;
+	&lt;/a&gt;
 	&lt;/li&gt;
 	&lt;li&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
 	&lt;li&gt;&lt;a href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
@@ -282,14 +304,15 @@
 	&lt;li&gt;&lt;a href="#"&gt;4&lt;/a&gt;&lt;/li&gt;
 	&lt;li&gt;&lt;a href="#"&gt;5&lt;/a&gt;&lt;/li&gt;
 	&lt;li&gt;
-	  &lt;a href="#" aria-label="Next"&gt;
-            &lt;span aria-hidden="true"&gt;&raquo;&lt;/span&gt;
-	  &lt;/a&gt;
+	&lt;a href="#" aria-label="Next"&gt;
+        &lt;span aria-hidden="true"&gt;&raquo;&lt;/span&gt;
+	&lt;/a&gt;
 	&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/nav&gt;
-    </pre>
+	&lt;/ul&gt;
+	&lt;/nav&gt;
+      </pre>
 
+    </div>
     
   </body>
 </html>
