@@ -38,10 +38,10 @@
       
       <h1>Cool Bootstrap Features</h1>
 
-      <h3>Boxes with Preserved Spaces and Line Breaks | <small>Code Blocks</small></h3>
+      <h3>Boxes with Preserved Spaces and Line Breaks  <small>Code Blocks</small></h3>
       <pre>&lt;pre&gt;Sample text here...&lt;/pre&gt;</pre>
 
-      <h3>Buttons with Various Icons | <small>Glyphicons</small></h3>
+      <h3>Buttons with Various Icons  <small>Glyphicons</small></h3>
       <!-- buttons with icons and dropdown menu -->
       <div class="btn-group" role="group" aria-label="...">
 	<button type="button" class="glyphicon glyphicon-heart-empty"></button>
@@ -73,44 +73,52 @@
       </pre>
       
       <br><br>
+
+      <h3> Attributes <small>Hovering over an attribute gives an explanation</small> </h3>
+      <p class="lead"> Hover over # to find an attribute!
+	<abbr title="number of columns between the current value and next value on a table">#</abbr>
+      </p>
      
       <!-- Rows?? -->
-      <div class="row show-grid">
-	<div class="col-md-1">Item 1</div>
-	<div class="col-md-1">Item 2</div>
-	<div class="col-md-1">Item 3</div>
-	<div class="col-md-1">Item 4</div>
-	<div class="col-md-1">Item 5</div>
-	<div class="col-md-1">Item 6</div>
-	<div class="col-md-1">Item 7</div>
-	<div class="col-md-1">Item 8</div>
-	<div class="col-md-1">Item 9</div>
-	<div class="col-md-1">Item 10</div>
-	<div class="col-md-1">Item 11</div>
-	<div class="col-md-1">Item 12</div>
-      </div>
-      <div class="row">
-	<div class="col-md-8">Item 1 with 8 spaces</div>
-	<div class="col-md-4">Item 2 with 4 spaces</div>
-      </div>
-      <div class="row">
-	<div class="col-md-4">.</div>
-	<div class="col-md-4">.col-md-4</div>
-	<div class="col-md-4">.col-md-4</div>
-      </div>
-      <div class="row">
-	<div class="col-md-6">.col-md-6</div>
-	<div class="col-md-6">.col-md-6</div>
-      </div>
-      
+      <h3> Row Spacing <small>col-<abbr title="md stands for medium device. xs would be extra small">md</abbr>-<abbr title="number of columns between the current value and next value on a table">#</abbr> quickly allows spacing of values in a table</small></h3>
+      <p id="small">There's a total of 12 columns. </p>
+      <div class="container">
+	<div class="row show-grid">
+	  <div class="col-md-1">Item 1</div>
+	  <div class="col-md-1">Item 2</div>
+	  <div class="col-md-1">Item 3</div>
+	  <div class="col-md-1">Item 4</div>
+	  <div class="col-md-1">Item 5</div>
+	  <div class="col-md-1">Item 6</div>
+	  <div class="col-md-1">Item 7</div>
+	  <div class="col-md-1">Item 8</div>
+	  <div class="col-md-1">Item 9</div>
+	  <div class="col-md-1">Item 10</div>
+	  <div class="col-md-1">Item 11</div>
+	  <div class="col-md-1">Item 12</div>
+	</div>
 
-      <p class="lead">...
-	<abbr title="attribute">attr</abbr>
-      </p>
+	<div class="row">
+	  <div class="col-md-8">Item 1 with 8 spaces</div>
+	  <div class="col-md-4">Item 2 with 4 spaces</div>
+	</div>
+	<div class="row">
+	  <div class="col-md-4">.col-md-4</div>
+	  <div class="col-md-4">.col-md-4</div>
+	  <div class="col-md-4">.col-md-4</div>
+	</div>
+	<div class="row">
+	  <div class="col-md-6">.col-md-6</div>
+	  <div class="col-md-6">.col-md-6</div>
+	</div>
+      </div>
       
-      
-
+      <br>
+      <h3>Variables</h3>
       <var>y</var> = <var>m</var><var>x</var> + <var>b</var>
+
+      <br><br>
+
       
       <!-- On rows -->
       <tr class="active">...</tr>
@@ -128,7 +136,10 @@
 	<td class="info">...</td>
       </tr>
 
+      
+
       <!-- nicely formatted form -->
+      <h3> Preformatted forms </h3>
       <div class="input-group">
 	<span class="input-group-addon" id="basic-addon1">@</span>
 	<input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
@@ -150,9 +161,11 @@
 	<span class="input-group-addon" id="basic-addon3">https://example.com/users/</span>
 	<input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
       </div>
-      
+
+      <br>
       
       <!-- Colorized inputs (Showing success or whatnot) -->
+      <h3> Colorized inputs </h3>
 
       <div class="form-group has-success has-feedback">
 	<label class="control-label" for="inputSuccess2">Input with success</label>
@@ -182,8 +195,10 @@
 	<span id="inputGroupSuccess1Status" class="sr-only">(success)</span>
       </div>
 
+      <br>
       
       <!-- Disabled field sets -->
+      <h3> Disabled field sets </h3>
       <form>
 	<fieldset disabled>
 	  <div class="form-group">
@@ -204,8 +219,11 @@
 	  <button type="submit" class="btn btn-primary">Submit</button>
 	</fieldset>
       </form>
+
+      <br>
       
       <!-- Checkboxes -->
+      <h3>Checkboxes</h3>
       <div class="has-success">
 	<div class="checkbox">
 	  <label>
@@ -230,9 +248,16 @@
 	  </label>
 	</div>
       </div>
-      
 
-      <h3>Adding Media | <small>Embeding Videos</small></h3>
+      <h3>Adding Media  <small>Responsive Images and Image Thumbnails</small></h3>
+
+      <img src="https://media1.britannica.com/eb-media/05/96205-004-CFC438E3.jpg" class="img-thumbnail" alt="Responsive image">
+
+      <div class="container">
+	<img src="http://foodnetwork.sndimg.com/content/dam/images/food/fullset/2011/10/12/0/FNM-110111_Neelys-Thanksgiving-041a_s4x3.jpg"  class="img-fluid" alt="Responsive image">
+	</div>
+
+      <h3>Adding Media  <small>Embeding Videos</small></h3>
       <!-- 16:9 aspect ratio -->
       <div class="container">
 	<div class="embed-responsive embed-responsive-16by9">
@@ -249,7 +274,7 @@
       </pre>
       
       <br><br>
-      <h3>Tracking Progress | <small>Progress Bar</small></h3>
+      <h3>Tracking Progress  <small>Progress Bar</small></h3>
       <!-- progress bar with percentage -->
       <div class="progress">
 	<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
@@ -266,7 +291,7 @@
       </pre>
 
 
-      <h3>Moving Between Pages | <small>Page Navigation</small></h3>
+      <h3>Moving Between Pages  <small>Page Navigation</small></h3>
       <!-- page navigation with 5 pages -->
       <br><br>
       <nav aria-label="Page navigation">
