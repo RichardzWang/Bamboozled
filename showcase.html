@@ -38,10 +38,10 @@
       
       <h1>Cool Bootstrap Features</h1>
 
-      <h3>Boxes with Preserved Spaces and Line Breaks  <small>Code Blocks</small></h3>
+      <h3 id="1">1. Boxes with Preserved Spaces and Line Breaks  <small>Code Blocks</small></h3>
       <pre>&lt;pre&gt;Sample text here...&lt;/pre&gt;</pre>
 
-      <h3>Buttons with Various Icons  <small>Glyphicons</small></h3>
+      <h3 id="2">2. Buttons with Various Icons  <small>Glyphicons</small></h3>
       <!-- buttons with icons and dropdown menu -->
       <div class="btn-group" role="group" aria-label="...">
 	<button type="button" class="glyphicon glyphicon-heart-empty"></button>
@@ -74,13 +74,13 @@
       
       <br><br>
 
-      <h3> Attributes <small>Hovering over an attribute gives an explanation</small> </h3>
+      <h3 id="3"> 3. Attributes <small>Hovering over an attribute gives an explanation</small> </h3>
       <p class="lead"> Hover over # to find an attribute!
 	<abbr title="number of columns between the current value and next value on a table">#</abbr>
       </p>
      
       <!-- Rows?? -->
-      <h3> Row Spacing <small>col-<abbr title="md stands for medium device. xs would be extra small">md</abbr>-<abbr title="number of columns between the current value and next value on a table">#</abbr> quickly allows spacing of values in a table</small></h3>
+      <h3 id="4"> 4. Row Spacing <small>col-<abbr title="md stands for medium device. xs would be extra small">md</abbr>-<abbr title="number of columns between the current value and next value on a table">#</abbr> quickly allows spacing of values in a table</small></h3>
       <p id="small">There's a total of 12 columns. </p>
       <div class="container">
 	<div class="row show-grid">
@@ -114,7 +114,8 @@
       </div>
       
       <br>
-      <h3>Variables</h3>
+      
+      <h3 id="5">5. Variables</h3>
       <var>y</var> = <var>m</var><var>x</var> + <var>b</var>
 
       <br><br>
@@ -136,7 +137,7 @@
 	<td class="info">...</td>
       </tr>
 
-      <h3> Hover tables and Fancy Coloring </h3>
+      <h3 id="6">6. Hover tables and Fancy Coloring </h3>
       <table class="table table-hover">
 	<tr>
 	  <td class="active">Active</td>
@@ -184,7 +185,7 @@
       
 
       <!-- nicely formatted form -->
-      <h3> Preformatted forms </h3>
+      <h3 id="7">7. Preformatted forms </h3>
       <div class="input-group">
 	<span class="input-group-addon" id="basic-addon1">@</span>
 	<input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
@@ -210,7 +211,7 @@
       <br>
       
       <!-- Colorized inputs (Showing success or whatnot) -->
-      <h3> Colorized inputs </h3>
+      <h3 id="8">8. Colorized inputs </h3>
 
       <div class="form-group has-success has-feedback">
 	<label class="control-label" for="inputSuccess2">Input with success</label>
@@ -243,7 +244,7 @@
       <br>
       
       <!-- Disabled field sets -->
-      <h3> Disabled field sets </h3>
+      <h3 id="9">9. Disabled field sets </h3>
       <form>
 	<fieldset disabled>
 	  <div class="form-group">
@@ -268,7 +269,7 @@
       <br>
       
       <!-- Checkboxes -->
-      <h3>Checkboxes</h3>
+      <h3 id="10">10. Checkboxes</h3>
       <div class="has-success">
 	<div class="checkbox">
 	  <label>
@@ -294,7 +295,7 @@
 	</div>
       </div>
 
-      <h3>Adding Media  <small>Responsive Images and Image Thumbnails</small></h3>
+      <h3 id="11">11. Adding Media  <small>Responsive Images and Image Thumbnails</small></h3>
 
       <img src="https://media1.britannica.com/eb-media/05/96205-004-CFC438E3.jpg" class="img-thumbnail" alt="Responsive image">
 
@@ -307,7 +308,7 @@
       </div>
 
 
-      <h3>Adding Media  <small>Embeding Videos</small></h3>
+      <h3 id="12">12. Adding Media  <small>Embeding Videos</small></h3>
       <!-- 16:9 aspect ratio -->
       <div class="container">
 	<div class="embed-responsive embed-responsive-16by9">
@@ -324,7 +325,7 @@
       </pre>
       
       <br><br>
-      <h3>Tracking Progress  <small>Progress Bar</small></h3>
+      <h3 id ="13">13. Tracking Progress  <small>Progress Bar</small></h3>
       <!-- progress bar with percentage -->
       <div class="progress">
 	<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
@@ -341,7 +342,7 @@
       </pre>
 
 
-      <h3>Moving Between Pages  <small>Page Navigation</small></h3>
+      <h3 id="14">14. Moving Between Pages  <small>Page Navigation</small></h3>
       <!-- page navigation with 5 pages -->
       <br><br>
       <nav aria-label="Page navigation">
@@ -351,11 +352,20 @@
               <span aria-hidden="true">&laquo;</span>
 	    </a>
 	  </li>
-	  <li><a href="#">1</a></li>
-	  <li><a href="#">2</a></li>
-	  <li><a href="#">3</a></li>
-	  <li><a href="#">4</a></li>
-	  <li><a href="#">5</a></li>
+	  <li><a href="#1">1</a></li>
+	  <li><a href="#2">2</a></li>
+	  <li><a href="#3">3</a></li>
+	  <li><a href="#4">4</a></li>
+	  <li><a href="#5">5</a></li>
+	  <li><a href="#6">6</a></li>
+	  <li><a href="#7">7</a></li>
+	  <li><a href="#8">8</a></li>
+	  <li><a href="#9">9</a></li>
+	  <li><a href="#10">10</a></li>
+	  <li><a href="#11">11</a></li>
+	  <li><a href="#12">12</a></li>
+	  <li><a href="#13">13</a></li>
+	  <li><a href="#14">14</a></li>
 	  <li>
 	    <a href="#" aria-label="Next">
               <span aria-hidden="true">&raquo;</span>
