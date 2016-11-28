@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  
+  <body>
+
+    <div class="container">
+
+      <nav aria-label="Page navigation">
+	<ul class="pagination">
+	  <li><a href="#">Feature Links</a></li>
+	  <li><a href="#1">1</a></li>
+	  <li><a href="#2">2</a></li>
+	  <li><a href="#3">3</a></li>
+	  <li><a href="#4">4</a></li>
+	  <li><a href="#5">5</a></li>
+	  <li><a href="#6">6</a></li>
+	  <li><a href="#7">7</a></li>
+	  <li><a href="#8">8</a></li>
+	  <li><a href="#9">9</a></li>
+	  <li><a href="#10">10</a></li>
+	  <li><a href="#11">11</a></li>
+	  <li><a href="#12">12</a></li>
+	  <li><a href="#13">13</a></li>
+	  <li><a href="#14">14</a></li>
+	  <li><a href="#15">15</a></li>
+	</ul>
+      </nav>
+      
+      <div class="alert alert-warning alert-dismissible" role="alert">
+	<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	<strong>Hello there!</strong> This is an alert message. Above, you can click on numbers that link to the corresponding Bootstrap features displayed on this page.
+      </div>
+
+      
+      <h1>Cool Bootstrap Features</h1>
+
+      <h3 id="1">1. Boxes with Preserved Spaces and Line Breaks  <small>Code Blocks</small></h3>
+      <pre>
+	&lt;pre&gt;Sample text here...&lt;/pre&gt;</pre>
+
+      <h3 id="2">2. Alert Message  <small>Dismissible Warning</small></h3>
+      <pre>
+	&lt;div class="alert alert-warning alert-dismissible" role="alert"&gt;
+	  &lt;button type="button" class="close" data-dismiss="alert" aria-label="Close"&gt;&lt;span aria-hidden="true"&gt;&times;&lt;/span&gt;&lt;/button&gt;
+	  &lt;strong&gt;Warning!&lt;/strong&gt; Better check yourself, you're not looking too good.
+	&lt;/div&gt;</pre>
+
+      
+      <h3 id="3">3. Buttons  <small>Glyphicons and Anchors</small></h3>
+      <!-- buttons with icons and dropdown menu -->
+      <div class="btn-group" role="group" aria-label="...">
+	<button type="button" class="glyphicon glyphicon-heart-empty"></button>
+	<button type="button" class="glyphicon glyphicon-thumbs-up"></button>
+	<button type="button" class="glyphicon glyphicon-trash"></button>
+	<button type="button" class="glyphicon glyphicon-headphones"></button>
+	<button type="button" class="glyphicon glyphicon-film"></button>
+	<button type="button" class="glyphicon glyphicon-envelope"></button>
+	<button type="button" class="glyphicon glyphicon-download-alt"></button>
+	<button type="button" class="glyphicon glyphicon-link"></button>
+	<button type="button" class="glyphicon glyphicon-copy"></button>
+	<button type="button" class="glyphicon glyphicon-paste"></button>
+	<!--
+	    <div class="btn-group" role="group">
+	      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		Dropdown
+		<span class="caret"></span>
+	      </button>
+	      <ul class="dropdown-menu">
+		<li><a href="#">Dropdown link</a></li>
+		<li><a href="#">Dropdown link</a></li>
+		<li role="separator" class="divider"></li>
+		<li class="disabled"><a href="#">Disabled link</a></li>
+	      </ul>
+	    </div>
+	    -->
+      </div>
+
+      <br><br>
+      
+      <pre>
+	&lt;div class="btn-group" role="group" aria-label="..."&gt;
+	  &lt;button type="button" class="glyphicon glyphicon-heart-empty"&gt;&lt;/button&gt;
+	  &lt;button type="button" class="glyphicon glyphicon-thumbs-up"&gt;&lt;/button&gt;
+	  &lt;button type="button" class="glyphicon glyphicon-trash"&gt;&lt;/button&gt;
+	&lt;/div&gt;</pre>
+
+      <br>
+
+      <a href="#" class="btn btn-primary btn-lg active" role="button">Primary link</a>
+      <a href="#" class="btn btn-default btn-lg active" role="button">Link</a>
+
+      <a href="#" class="btn btn-primary btn-lg disabled" role="button">Primary link</a>
+      <a href="#" class="btn btn-default btn-lg disabled" role="button">Link</a>
+
+      <br><br>
+      
+      <pre>
+	&lt;a href="#" class="btn btn-primary btn-lg active" role="button"&gt;Primary link&lt;/a&gt;
+	&lt;a href="#" class="btn btn-default btn-lg active" role="button"&gt;Link&lt;/a&gt;
+
+	&lt;a href="#" class="btn btn-primary btn-lg disabled" role="button"&gt;Primary link&lt;/a&gt;
+	&lt;a href="#" class="btn btn-default btn-lg disabled" role="button"&gt;Link&lt;/a&gt;</pre>
+      
+      <h3 id="4">4. Attributes <small>Hovering over an attribute gives an explanation</small> </h3>
+      <p class="lead"> Hover over # to find an attribute!
+	<abbr title="number of columns between the current value and next value on a table">#</abbr>
+      </p>
+
+      <pre>
+	&lt;abbr title="number of columns between the current value and next value on a table"&gt;#&lt;/abbr&gt;</pre>
+     
+      <!-- Rows?? -->
+      <h3 id="5">5. Row Spacing <small>col-<abbr title="md stands for medium device. xs would be extra small">md</abbr>-<abbr title="number of columns between the current value and next value on a table">#</abbr> quickly allows spacing of values in a table</small></h3>
+      <p id="small">There's a total of 12 columns. </p>
+      <div class="container">
+	<div class="row show-grid">
+	  <div class="col-md-1">Item 1</div>
+	  <div class="col-md-1">Item 2</div>
+	  <div class="col-md-1">Item 3</div>
+	  <div class="col-md-1">Item 4</div>
+	  <div class="col-md-1">Item 5</div>
+	  <div class="col-md-1">Item 6</div>
+	  <div class="col-md-1">Item 7</div>
+	  <div class="col-md-1">Item 8</div>
+	  <div class="col-md-1">Item 9</div>
+	  <div class="col-md-1">Item 10</div>
+	  <div class="col-md-1">Item 11</div>
+	  <div class="col-md-1">Item 12</div>
+	</div>
+
+	<div class="row">
+	  <div class="col-md-8">Item 1 with 8 spaces</div>
+	  <div class="col-md-4">Item 2 with 4 spaces</div>
+	</div>
+	<div class="row">
+	  <div class="col-md-4">.col-md-4</div>
+	  <div class="col-md-4">.col-md-4</div>
+	  <div class="col-md-4">.col-md-4</div>
+	</div>
+	<div class="row">
+	  <div class="col-md-6">.col-md-6</div>
+	  <div class="col-md-6">.col-md-6</div>
+	</div>
+      </div>
+
+      <br>
+      
+      <pre>
+	&lt;div class="container"&gt;
+	  &lt;div class="row show-grid"&gt;
+	    &lt;div class="col-md-1"&gt;Item 1&lt;/div&gt;
+	    &lt;div class="col-md-1"&gt;Item 2&lt;/div&gt;
+	    &lt;div class="col-md-1"&gt;Item 3&lt;/div&gt;
+	    &lt;div class="col-md-1"&gt;Item 4&lt;/div&gt;
+	    &lt;div class="col-md-1"&gt;Item 5&lt;/div&gt;
+	    &lt;div class="col-md-1"&gt;Item 6&lt;/div&gt;
+	    &lt;div class="col-md-1"&gt;Item 7&lt;/div&gt;
+	    &lt;div class="col-md-1"&gt;Item 8&lt;/div&gt;
+	    &lt;div class="col-md-1"&gt;Item 9&lt;/div&gt;
+	    &lt;div class="col-md-1"&gt;Item 10&lt;/div&gt;
+	    &lt;div class="col-md-1"&gt;Item 11&lt;/div&gt;
+	    &lt;div class="col-md-1"&gt;Item 12&lt;/div&gt;
+	  &lt;/div&gt;
+
+	  &lt;div class="row"&gt;
+	    &lt;div class="col-md-8"&gt;Item 1 with 8 spaces&lt;/div&gt;
+	    &lt;div class="col-md-4"&gt;Item 2 with 4 spaces&lt;/div&gt;
+	  &lt;/div&gt;
+	  &lt;div class="row"&gt;
+	    &lt;div class="col-md-4"&gt;.col-md-4&lt;/div&gt;
+	    &lt;div class="col-md-4"&gt;.col-md-4&lt;/div&gt;
+	    &lt;div class="col-md-4"&gt;.col-md-4&lt;/div&gt;
+	  &lt;/div&gt;
+	  &lt;div class="row"&gt;
+	    &lt;div class="col-md-6"&gt;.col-md-6&lt;/div&gt;
+	    &lt;div class="col-md-6"&gt;.col-md-6&lt;/div&gt;
+	  &lt;/div&gt;
+	&lt;/div&gt;</pre>
+
+      
+      <h3 id="6">6. Variables</h3>
+      <var>y</var> = <var>m</var><var>x</var> + <var>b</var>
+
+      <pre>
+	&lt;var&gt;y&lt;/var&gt; = &lt;var&gt;m&lt;/var&gt;&lt;var&gt;x&lt;/var&gt; + &lt;var&gt;b&lt;/var&gt;</pre>
+
+      <!--
+      <tr class="active">...</tr>
+      <tr class="success">...</tr>
+      <tr class="warning">...</tr>
+      <tr class="danger">...</tr>
+      <tr class="info">...</tr>
+      
+      <tr>
+	<td class="active">...</td>
+	<td class="success">...</td>
+	<td class="warning">...</td>
+	<td class="danger">...</td>
+	<td class="info">...</td>
+      </tr>
+      -->
+      
+      <h3 id="7">7. Hover tables and Fancy Coloring </h3>
+      <table class="table table-hover">
+	<tr>
+	  <td class="active">Active</td>
+	  <td class="success">Success</td>
+	  <td class="warning">Warning</td>
+	  <td class="danger">Danger</td>
+	  <td class="info">Info</td>
+	</tr>
+	<tr class="active">
+	  <td class="active">Active</td>
+	  <td class="success">Success</td>
+	  <td class="warning">Warning</td>
+	  <td class="danger">Danger</td>
+	  <td class="info">Info</td>
+	</tr>
+	<tr class="success">...
+	  <td>Entire</td>
+	  <td>Row</td>
+	  <td>Has</td>
+	  <td>Success</td>
+	  <td>!</td>
+	</tr>
+	<tr class="warning">
+	  <td>Entire</td>
+	  <td>Row</td>
+	  <td>Is</td>
+	  <td>a</td>
+	  <td>Warning</td>
+	</tr>
+	<tr class="danger">
+	  <td>Entire</td>
+	  <td>Row</td>
+	  <td>Screams</td>
+	  <td>Danger</td>
+	  <td>!</td>
+	</tr>
+	<tr class="info">
+	  <td>Entire</td>
+	  <td>Row</td>
+	  <td>Is</td>
+	  <td>Colored</td>
+	  <td>Info?</td>
+	</tr>
+      </table>
+
+      <pre>
+	&lt;table class="table table-hover"&gt;
+	  &lt;tr&gt;
+	    &lt;td class="active"&gt;Active&lt;/td&gt;
+	    &lt;td class="success"&gt;Success&lt;/td&gt;
+	    &lt;td class="warning"&gt;Warning&lt;/td&gt;
+	    &lt;td class="danger"&gt;Danger&lt;/td&gt;
+	    &lt;td class="info"&gt;Info&lt;/td&gt;
+	  &lt;/tr&gt;
+	  &lt;tr class="active"&gt;
+	    &lt;td class="active"&gt;Active&lt;/td&gt;
+	    &lt;td class="success"&gt;Success&lt;/td&gt;
+	    &lt;td class="warning"&gt;Warning&lt;/td&gt;
+	    &lt;td class="danger"&gt;Danger&lt;/td&gt;
+	    &lt;td class="info"&gt;Info&lt;/td&gt;
+	  &lt;/tr&gt;
+	  &lt;tr class="success"&gt;...
+	    &lt;td&gt;Entire&lt;/td&gt;
+	    &lt;td&gt;Row&lt;/td&gt;
+	    &lt;td&gt;Has&lt;/td&gt;
+	    &lt;td&gt;Success&lt;/td&gt;
+	    &lt;td&gt;!&lt;/td&gt;
+	  &lt;/tr&gt;
+	  &lt;tr class="warning"&gt;
+	    &lt;td&gt;Entire&lt;/td&gt;
+	    &lt;td&gt;Row&lt;/td&gt;
+	    &lt;td&gt;Is&lt;/td&gt;
+	    &lt;td&gt;a&lt;/td&gt;
+	    &lt;td&gt;Warning&lt;/td&gt;
+	  &lt;/tr&gt;
+	  &lt;tr class="danger"&gt;
+	    &lt;td&gt;Entire&lt;/td&gt;
+	    &lt;td&gt;Row&lt;/td&gt;
+	    &lt;td&gt;Screams&lt;/td&gt;
+	    &lt;td&gt;Danger&lt;/td&gt;
+	    &lt;td&gt;!&lt;/td&gt;
+	  &lt;/tr&gt;
+	  &lt;tr class="info"&gt;
+	    &lt;td&gt;Entire&lt;/td&gt;
+	    &lt;td&gt;Row&lt;/td&gt;
+	    &lt;td&gt;Is&lt;/td&gt;
+	    &lt;td&gt;Colored&lt;/td&gt;
+	    &lt;td&gt;Info?&lt;/td&gt;
+	  &lt;/tr&gt;
+	&lt;/table&gt;</pre>
+      
+
+      <!-- nicely formatted form -->
+      <h3 id="8">8. Preformatted forms </h3>
+      <div class="input-group">
+	<span class="input-group-addon" id="basic-addon1">@</span>
+	<input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+      </div>
+
+      <div class="input-group">
+	<input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
+	<span class="input-group-addon" id="basic-addon2">@example.com</span>
+      </div>
+
+      <div class="input-group">
+	<span class="input-group-addon">$</span>
+	<input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+	<span class="input-group-addon">.00</span>
+      </div>
+
+      <label for="basic-url">Your vanity URL</label>
+      <div class="input-group">
+	<span class="input-group-addon" id="basic-addon3">https://example.com/users/</span>
+	<input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+      </div>
+
+      <br>
+      
+      <pre>
+	&lt;div class="input-group"&gt;
+	  &lt;span class="input-group-addon" id="basic-addon1"&gt;@&lt;/span&gt;
+	  &lt;input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1"&gt;
+	&lt;/div&gt;
+
+	&lt;div class="input-group"&gt;
+	  &lt;input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2"&gt;
+	  &lt;span class="input-group-addon" id="basic-addon2"&gt;@example.com&lt;/span&gt;
+	&lt;/div&gt;
+
+	&lt;div class="input-group"&gt;
+	  &lt;span class="input-group-addon"&gt;$&lt;/span&gt;
+	  &lt;input type="text" class="form-control" aria-label="Amount (to the nearest dollar)"&gt;
+	  &lt;span class="input-group-addon"&gt;.00&lt;/span&gt;
+	&lt;/div&gt;
+
+	&lt;label for="basic-url"&gt;Your vanity URL&lt;/label&gt;
+	&lt;div class="input-group"&gt;
+	  &lt;span class="input-group-addon" id="basic-addon3"&gt;https://example.com/users/&lt;/span&gt;
+	  &lt;input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3"&gt;
+	&lt;/div&gt;</pre>
+
+      
+      <!-- Colorized inputs (Showing success or whatnot) -->
+      <h3 id="9">9. Colorized inputs </h3>
+
+      <div class="form-group has-success has-feedback">
+	<label class="control-label" for="inputSuccess2">Input with success</label>
+	<input type="text" class="form-control" id="inputSuccess2" aria-describedby="inputSuccess2Status">
+	<span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+	<span id="inputSuccess2Status" class="sr-only">(success)</span>
+      </div>
+      <div class="form-group has-warning has-feedback">
+	<label class="control-label" for="inputWarning2">Input with warning</label>
+	<input type="text" class="form-control" id="inputWarning2" aria-describedby="inputWarning2Status">
+	<span class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true"></span>
+	<span id="inputWarning2Status" class="sr-only">(warning)</span>
+      </div>
+      <div class="form-group has-error has-feedback">
+	<label class="control-label" for="inputError2">Input with error</label>
+	<input type="text" class="form-control" id="inputError2" aria-describedby="inputError2Status">
+	<span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+	<span id="inputError2Status" class="sr-only">(error)</span>
+      </div>
+      <div class="form-group has-success has-feedback">
+	<label class="control-label" for="inputGroupSuccess1">Input group with success</label>
+	<div class="input-group">
+	  <span class="input-group-addon">@</span>
+	  <input type="text" class="form-control" id="inputGroupSuccess1" aria-describedby="inputGroupSuccess1Status">
+	</div>
+	<span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+	<span id="inputGroupSuccess1Status" class="sr-only">(success)</span>
+      </div>
+
+      <pre>
+	&lt;div class="form-group has-success has-feedback"&gt;
+	  &lt;label class="control-label" for="inputSuccess2"&gt;Input with success&lt;/label&gt;
+	  &lt;input type="text" class="form-control" id="inputSuccess2" aria-describedby="inputSuccess2Status"&gt;
+	  &lt;span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"&gt;&lt;/span&gt;
+	  &lt;span id="inputSuccess2Status" class="sr-only"&gt;(success)&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class="form-group has-warning has-feedback"&gt;
+	  &lt;label class="control-label" for="inputWarning2"&gt;Input with warning&lt;/label&gt;
+	  &lt;input type="text" class="form-control" id="inputWarning2" aria-describedby="inputWarning2Status"&gt;
+	  &lt;span class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true"&gt;&lt;/span&gt;
+	  &lt;span id="inputWarning2Status" class="sr-only"&gt;(warning)&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class="form-group has-error has-feedback"&gt;
+	  &lt;label class="control-label" for="inputError2"&gt;Input with error&lt;/label&gt;
+	  &lt;input type="text" class="form-control" id="inputError2" aria-describedby="inputError2Status"&gt;
+	  &lt;span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"&gt;&lt;/span&gt;
+	  &lt;span id="inputError2Status" class="sr-only"&gt;(error)&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class="form-group has-success has-feedback"&gt;
+	  &lt;label class="control-label" for="inputGroupSuccess1"&gt;Input group with success&lt;/label&gt;
+	  &lt;div class="input-group"&gt;
+	    &lt;span class="input-group-addon"&gt;@&lt;/span&gt;
+	    &lt;input type="text" class="form-control" id="inputGroupSuccess1" aria-describedby="inputGroupSuccess1Status"&gt;
+	  &lt;/div&gt;
+	  &lt;span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"&gt;&lt;/span&gt;
+	  &lt;span id="inputGroupSuccess1Status" class="sr-only"&gt;(success)&lt;/span&gt;
+	&lt;/div&gt;</pre>
+
+      
+      <!-- Disabled field sets -->
+      <h3 id="10">10. Disabled field sets </h3>
+      <form>
+	<fieldset disabled>
+	  <div class="form-group">
+	    <label for="disabledTextInput">Disabled input</label>
+	    <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+	  </div>
+	  <div class="form-group">
+	    <label for="disabledSelect">Disabled select menu</label>
+	    <select id="disabledSelect" class="form-control">
+              <option>Disabled select</option>
+	    </select>
+	  </div>
+	  <div class="checkbox">
+	    <label>
+              <input type="checkbox"> Can't check this
+	    </label>
+	  </div>
+	  <button type="submit" class="btn btn-primary">Submit</button>
+	</fieldset>
+      </form>
+
+      <br>
+      
+      <pre>
+	&lt;form&gt;
+	  &lt;fieldset disabled&gt;
+	    &lt;div class="form-group"&gt;
+	      &lt;label for="disabledTextInput"&gt;Disabled input&lt;/label&gt;
+	      &lt;input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input"&gt;
+	    &lt;/div&gt;
+	    &lt;div class="form-group"&gt;
+	      &lt;label for="disabledSelect"&gt;Disabled select menu&lt;/label&gt;
+	      &lt;select id="disabledSelect" class="form-control"&gt;
+		&lt;option&gt;Disabled select&lt;/option&gt;
+	      &lt;/select&gt;
+	    &lt;/div&gt;
+	    &lt;div class="checkbox"&gt;
+	      &lt;label&gt;
+		&lt;input type="checkbox"&gt; Can't check this
+	      &lt;/label&gt;
+	    &lt;/div&gt;
+	    &lt;button type="submit" class="btn btn-primary"&gt;Submit&lt;/button&gt;
+	  &lt;/fieldset&gt;
+	&lt;/form&gt;</pre>
+
+      
+      <!-- Checkboxes -->
+      <h3 id="11">11. Checkboxes</h3>
+      <div class="has-success">
+	<div class="checkbox">
+	  <label>
+	    <input type="checkbox" id="checkboxSuccess" value="option1">
+	    Checkbox with success
+	  </label>
+	</div>
+      </div>
+      <div class="has-warning">
+	<div class="checkbox">
+	  <label>
+	    <input type="checkbox" id="checkboxWarning" value="option1">
+	    Checkbox with warning
+	  </label>
+	</div>
+      </div>
+      <div class="has-error">
+	<div class="checkbox">
+	  <label>
+	    <input type="checkbox" id="checkboxError" value="option1">
+	    Checkbox with error
+	  </label>
+	</div>
+      </div>
+
+      <pre>
+	&lt;div class="has-success"&gt;
+	  &lt;div class="checkbox"&gt;
+	    &lt;label&gt;
+	      &lt;input type="checkbox" id="checkboxSuccess" value="option1"&gt;
+	      Checkbox with success
+	    &lt;/label&gt;
+	  &lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="has-warning"&gt;
+	  &lt;div class="checkbox"&gt;
+	    &lt;label&gt;
+	      &lt;input type="checkbox" id="checkboxWarning" value="option1"&gt;
+	      Checkbox with warning
+	    &lt;/label&gt;
+	  &lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="has-error"&gt;
+	  &lt;div class="checkbox"&gt;
+	    &lt;label&gt;
+	      &lt;input type="checkbox" id="checkboxError" value="option1"&gt;
+	      Checkbox with error
+	    &lt;/label&gt;
+	  &lt;/div&gt;
+	&lt;/div&gt;</pre>
+
+      
+      <h3 id="12">12. Adding Media  <small>Responsive Images and Image Thumbnails</small></h3>
+
+      <img src="https://media1.britannica.com/eb-media/05/96205-004-CFC438E3.jpg" class="img-thumbnail" alt="Responsive image">
+
+      <img src="http://foodnetwork.sndimg.com/content/dam/images/food/fullset/2011/10/12/0/FNM-110111_Neelys-Thanksgiving-041a_s4x3.jpg"  class="img-fluid" class="rounded float-md-right" alt="Responsive image" width="375" height="281">
+
+      <br>
+      <div class ="container">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Boostrap_logo.svg/2000px-Boostrap_logo.svg.png"  class="pull-left" alt="..."  width="150" height="150">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Boostrap_logo.svg/2000px-Boostrap_logo.svg.png" class="pull-right" alt="..."  width="150" height="150">
+      </div>
+
+      <br>
+      
+      <pre>
+	&lt;img src="https://media1.britannica.com/eb-media/05/96205-004-CFC438E3.jpg" class="img-thumbnail" alt="Responsive image"&gt;
+
+	&lt;img src="http://foodnetwork.sndimg.com/content/dam/images/food/fullset/2011/10/12/0/FNM-110111_Neelys-Thanksgiving-041a_s4x3.jpg"  class="img-fluid" class="rounded float-md-right" alt="Responsive image" width="375" height="281"&gt;
+
+	&lt;br&gt;
+	&lt;div class ="container"&gt;
+	  &lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Boostrap_logo.svg/2000px-Boostrap_logo.svg.png"  class="pull-left" alt="..."  width="150" height="150"&gt;
+	  &lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Boostrap_logo.svg/2000px-Boostrap_logo.svg.png" class="pull-right" alt="..."  width="150" height="150"&gt;
+	&lt;/div&gt;</pre>
+      
+
+      <h3 id="13">13. Adding Media  <small>Embedding Videos</small></h3>
+      <!-- 16:9 aspect ratio -->
+      <div class="container">
+	<div class="embed-responsive embed-responsive-16by9">
+	  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/jizrQFj9tE0"></iframe>
+	</div>
+      </div>
+
+      <br>
+      
+      <pre>
+	&lt;div class="container"&gt;
+	  &lt;div class="embed-responsive embed-responsive-16by9"&gt;
+	    &lt;iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"&gt;&lt;/iframe&gt;
+	  &lt;/div&gt;
+	&lt;/div&gt;</pre>
+
+      
+      <h3 id="14">14. Tracking Progress  <small>Progress Bar</small></h3>
+      <!-- progress bar with percentage -->
+      <div class="progress">
+	<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+	  100%
+	</div>
+      </div>
+
+      <pre>
+	&lt;div class="progress"&gt;
+	  &lt;div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"&gt;
+	    100%
+	  &lt;/div&gt;
+	&lt;/div&gt;</pre>
+
+
+      <h3 id="15">15. Moving Within a Page  <small>Page Navigation</small></h3>
+      (See top of the page for the page navigation bar.)
+      <br><br>
+      <!--
+      <nav aria-label="Page navigation">
+	<ul class="pagination">
+	  <li>
+	    <a href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+	    </a>
+	  </li>
+	  <li><a href="#1">1</a></li>
+	  <li><a href="#2">2</a></li>
+	  <li><a href="#3">3</a></li>
+	  <li><a href="#4">4</a></li>
+	  <li><a href="#5">5</a></li>
+	  <li><a href="#6">6</a></li>
+	  <li><a href="#7">7</a></li>
+	  <li><a href="#8">8</a></li>
+	  <li><a href="#9">9</a></li>
+	  <li><a href="#10">10</a></li>
+	  <li><a href="#11">11</a></li>
+	  <li><a href="#12">12</a></li>
+	  <li><a href="#13">13</a></li>
+	  <li><a href="#14">14</a></li>
+	  <li><a href="#15">15</a></li>
+	  <li>
+	    <a href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+	    </a>
+	  </li>
+	</ul>
+      </nav>
+      -->
+
+      <pre>
+	&lt;nav aria-label="Page navigation"&gt;
+	  &lt;ul class="pagination"&gt;
+	    &lt;li&gt;
+	      &lt;a href="#" aria-label="Previous"&gt;
+		&lt;span aria-hidden="true"&gt;&laquo;&lt;/span&gt;
+	      &lt;/a&gt;
+	    &lt;/li&gt;
+	    &lt;li&gt;&lt;a href="#1"&gt;1&lt;/a&gt;&lt;/li&gt;
+	    &lt;li&gt;&lt;a href="#2"&gt;2&lt;/a&gt;&lt;/li&gt;
+	    &lt;li&gt;&lt;a href="#3"&gt;3&lt;/a&gt;&lt;/li&gt;
+	    &lt;li&gt;&lt;a href="#4"&gt;4&lt;/a&gt;&lt;/li&gt;
+	    &lt;li&gt;&lt;a href="#5"&gt;5&lt;/a&gt;&lt;/li&gt;
+	    &lt;li&gt;&lt;a href="#6"&gt;6&lt;/a&gt;&lt;/li&gt;
+	    &lt;li&gt;&lt;a href="#7"&gt;7&lt;/a&gt;&lt;/li&gt;
+	    &lt;li&gt;&lt;a href="#8"&gt;8&lt;/a&gt;&lt;/li&gt;
+	    &lt;li&gt;&lt;a href="#9"&gt;9&lt;/a&gt;&lt;/li&gt;
+	    &lt;li&gt;&lt;a href="#10"&gt;10&lt;/a&gt;&lt;/li&gt;
+	    &lt;li&gt;&lt;a href="#11"&gt;11&lt;/a&gt;&lt;/li&gt;
+	    &lt;li&gt;&lt;a href="#12"&gt;12&lt;/a&gt;&lt;/li&gt;
+	    &lt;li&gt;&lt;a href="#13"&gt;13&lt;/a&gt;&lt;/li&gt;
+	    &lt;li&gt;&lt;a href="#14"&gt;14&lt;/a&gt;&lt;/li&gt;
+	    &lt;li&gt;&lt;a href="#15"&gt;15&lt;/a&gt;&lt;/li&gt;
+	    &lt;li&gt;
+	      &lt;a href="#" aria-label="Next"&gt;
+		&lt;span aria-hidden="true"&gt;&raquo;&lt;/span&gt;
+	      &lt;/a&gt;
+	    &lt;/li&gt;
+	  &lt;/ul&gt;
+	&lt;/nav&gt;</pre>
+
+    </div>
+    
+  </body>
+</html>
